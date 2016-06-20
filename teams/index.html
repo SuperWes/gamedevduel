@@ -15,18 +15,16 @@
   <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-  <!-- Latest compiled and minified Locales -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/locale/bootstrap-table-en-US.min.js"></script>
 </head>
 
 
-  <body role="document" >
+  <body role="document"  >
 
     <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -89,8 +87,10 @@
             <strong><a href="/teams/team-1">Team 1</a></strong>
           </td>
           <td>
-            <a href="http://github.com/Team1/game"><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-github-alt fa-stack-1x"></i></span></a>
-            <a href="http://twitter.com/Team1"><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
+            <a href="http://github.com/Team1/game" data-toggle="tooltip" data-placement="bottom" title="GitHub" style="display:inline-block;"><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-github-alt fa-stack-1x"></i></span></a>
+
+            <a href="http://twitter.com/Team1" data-toggle="tooltip" data-placement="bottom" title="Twitter" style="display:inline-block;" ><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
+
           </td>
           <td>
             
@@ -99,15 +99,18 @@
           </td>
           <td>
             
-              <a href="team.itch"><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-gamepad fa-stack-1x"></i></span></a></a>
+              <a href="https://game.itch.io/name" data-toggle="tooltip" data-placement="bottom" title="Itch.io" style="display:inline-block;"><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-gamepad fa-stack-1x"></i></span></a></a>
+
             
           </td>
           <td>
-            <i class="fa fa-trophy fa-2x trophy" ></i>
-            <span class="trophy-text" >
-              2
-              
-              </span>
+
+            
+            
+            <span class="trophy " ><i class="fa fa-trophy fa-2x trophy-icon" ></i>
+<span class="trophy-text" >1</span></span>
+
+
           </td>
         </tr>
         
@@ -116,8 +119,10 @@
             <strong><a href="/teams/cool-team">Cool Team</a></strong>
           </td>
           <td>
-            <a href="http://github.com/CoolTeam/our-game"><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-github-alt fa-stack-1x"></i></span></a>
-            <a href="http://twitter.com/CoolTeam"><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
+            <a href="http://github.com/CoolTeam/our-game" data-toggle="tooltip" data-placement="bottom" title="GitHub" style="display:inline-block;"><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-github-alt fa-stack-1x"></i></span></a>
+
+            <a href="http://twitter.com/CoolTeam" data-toggle="tooltip" data-placement="bottom" title="Twitter" style="display:inline-block;" ><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
+
           </td>
           <td>
             
@@ -126,15 +131,18 @@
           </td>
           <td>
             
-              <a href="team.itch"><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-gamepad fa-stack-1x"></i></span></a></a>
+              <a href="https://cool.itch.io/coolgame" data-toggle="tooltip" data-placement="bottom" title="Itch.io" style="display:inline-block;"><span class="fa-stack fa-lg fa-fw"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-gamepad fa-stack-1x"></i></span></a></a>
+
             
           </td>
           <td>
-            <i class="fa fa-trophy fa-2x trophy" ></i>
-            <span class="trophy-text" >
-              5
-              
-              </span>
+
+            
+            
+            <span class="trophy " ><i class="fa fa-trophy fa-2x trophy-icon" ></i>
+<span class="trophy-text" >2</span></span>
+
+
           </td>
         </tr>
         
@@ -143,7 +151,7 @@
         <tr>
           <th colspan="2" class="text-right">Total Teams: 2</td>
           <td></td>
-          <th colspan="2" class="text-right">Total Points: 7</td>
+          <th colspan="2" class="text-right">Total Points: 3</td>
         </tr>
       </tfoot>
     </table>
@@ -171,6 +179,12 @@
     </div>
   </div>
 </footer>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
 
 
   </body>

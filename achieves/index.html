@@ -15,18 +15,16 @@
   <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-  <!-- Latest compiled and minified Locales -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/locale/bootstrap-table-en-US.min.js"></script>
 </head>
 
 
-  <body role="document" >
+  <body role="document"  >
 
     <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -82,16 +80,20 @@
       <tbody>
         
         <tr>
-          <td class="text-center"><a href="/achieves/0"><img src="/assets/icons/dark-squad.svg" class="ach-icon" alt="icons/dark-squad.svg">
-</a></td>
-          <td><a href="/achieves/0">Sign-up!</a></td>
+          <td class="text-center">
+
+<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Sign-up!</strong><br/>Registered your team for the Jam" ><img src="/assets/icons/dark-squad.svg" class="ach-icon" alt="icons/dark-squad.svg"></span>
+</td>
+          <td><strong>Sign-up!</strong></td>
           <td>Registered your team for the Jam</td>
         </tr>
         
         <tr>
-          <td class="text-center"><a href="/achieves/1"><img src="/assets/icons/conversation.svg" class="ach-icon" alt="icons/conversation.svg">
-</a></td>
-          <td><a href="/achieves/1">Start Talking</a></td>
+          <td class="text-center">
+
+<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Start Talking</strong><br/>Sign up for the Slack and post an introduction message" ><img src="/assets/icons/conversation.svg" class="ach-icon" alt="icons/conversation.svg"></span>
+</td>
+          <td><strong>Start Talking</strong></td>
           <td>Sign up for the Slack and post an introduction message</td>
         </tr>
         
@@ -121,6 +123,12 @@
     </div>
   </div>
 </footer>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
 
 
   </body>
