@@ -7943,6 +7943,9 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px; }
 
+.container {
+  padding-bottom: 30px; }
+
 .trophy {
   display: inline-block;
   line-height: 1em; }
