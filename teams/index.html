@@ -158,8 +158,15 @@
 
 <script>
   $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
+    $('.table').on('sort.bs.table', function(e, name, order) {
+      setTimeout(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+      }, 10);
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+  });
 </script>
 
 
