@@ -6,13 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Achievements</title>
+  <title>Achievements - Game Dev Duel - Slow Jam 2016</title>
   <meta name="description" content="">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <link type="text/css" rel="stylesheet" href="/assets/style.css">
 
   <link rel="canonical" href="/achieves/">
-  <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Game Dev Duel - Slow Jam 2016" href="/feed.xml">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
@@ -38,15 +41,14 @@
       </button>
       <a class="navbar-brand" href="/"> Game Dev Duel - Slow Jam 2016</a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li ><a href="/">Home </a></li>
+        <li ><a href="/faq">FAQ </a></li>
         <li ><a href="/teams">Teams </a></li>
         <li  class="active" ><a href="/achieves">Achievements <span class="sr-only">(current)</span></a></li>
       </ul>
-
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -75,10 +77,11 @@
           <th data-field="icon" data-sortable="false"></th>
           <th data-field="achieve-name" data-sortable="true">Achievement</th>
           <th data-field="desc" data-sortable="false">Description</th>
-          <th data-field="week" data-sortable="true" >Week</th>
+          <th data-field="week" data-sortable="true" data-sorter="weekSort" >Phase</th>
         </tr>
       </thead>
       <tbody>
+        
         
         <tr>
           <td class="text-center">
@@ -87,11 +90,13 @@
 </td>
           <td><strong>Freebie</strong></td>
           <td>Sign into slack and post a team name in the #gamedevduelcheevos channel (https://stlgamedev.slack.com/messages/gamedevduelcheevos)</td>
-          <td>
+          <td class="text-center">
             1
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -100,11 +105,13 @@
 </td>
           <td><strong>Movement</strong></td>
           <td>Make something happen when you interact with the game</td>
-          <td>
+          <td class="text-center">
             1
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -113,11 +120,13 @@
 </td>
           <td><strong>Artsy</strong></td>
           <td>Add at least one art asset into the game</td>
-          <td>
+          <td class="text-center">
             1
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -126,11 +135,13 @@
 </td>
           <td><strong>Slacker</strong></td>
           <td>Create a private slack channel and invite your team to coordinate game progress</td>
-          <td>
+          <td class="text-center">
             1
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -139,11 +150,13 @@
 </td>
           <td><strong>Tracker</strong></td>
           <td>Set up a Kanban board (https://trello.com/ or the tool of your choice) to prioritize tasks and track progress</td>
-          <td>
+          <td class="text-center">
             1
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -152,11 +165,13 @@
 </td>
           <td><strong>Check-in #1</strong></td>
           <td>Meet up with your team in person. We recommend the check-in event at Riot Games on July 6th (featuring Butterscotch Shenanigans)</td>
-          <td>
+          <td class="text-center">
             1
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -165,11 +180,13 @@
 </td>
           <td><strong>Git it on</strong></td>
           <td>If your game isn't in version control by now, add it to version control (github.com, bitbucket.com, Subversion)</td>
-          <td>
+          <td class="text-center">
             1
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -178,11 +195,13 @@
 </td>
           <td><strong>Hardcore #1</strong></td>
           <td>Everyone on the team worked on the game for over 3 hours in one sitting before July 8th</td>
-          <td>
+          <td class="text-center">
             1
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -191,11 +210,13 @@
 </td>
           <td><strong>Weekender #1</strong></td>
           <td>At least one person on the team spent at least 8 hours over the weekend of July 1st to July 3rd working on the game</td>
-          <td>
+          <td class="text-center">
             1
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -204,401 +225,73 @@
 </td>
           <td><strong>Game Loop</strong></td>
           <td>You have the core gameplay loop working in your game</td>
-          <td>
+          <td class="text-center">
             1
             
           </td>
         </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Named</strong><br/>Finalize the name of your game so that you can begin marketing it" ><img src="/assets/icons/fountain-pen.svg" class="ach-icon" alt="icons/fountain-pen.svg"></span>
-</td>
-          <td><strong>Named</strong></td>
-          <td>Finalize the name of your game so that you can begin marketing it</td>
-          <td>
-            2
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>StandUp</strong><br/>Post a Daily Standup in the Slack channel. In a Standup, mention what you did yesterday, and what you plan to do today. Standups are a great way to keep you focused on your goals!" ><img src="/assets/icons/muscle-up.svg" class="ach-icon" alt="icons/muscle-up.svg"></span>
-</td>
-          <td><strong>StandUp</strong></td>
-          <td>Post a Daily Standup in the Slack channel. In a Standup, mention what you did yesterday, and what you plan to do today. Standups are a great way to keep you focused on your goals!</td>
-          <td>
-            2
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Screenshot Saturday #1</strong><br/>July 9th Screenshot Saturday! Post a screenshot to Twitter with the name of your game and the hashtags #screenshotsaturday and #gamedevduel and/or the Game Dev Co-op Facebook page (http://facebook.com/stlgamedev) with the hashtag #screenshotsaturday" ><img src="/assets/icons/photo-camera.svg" class="ach-icon" alt="icons/photo-camera.svg"></span>
-</td>
-          <td><strong>Screenshot Saturday #1</strong></td>
-          <td>July 9th Screenshot Saturday! Post a screenshot to Twitter with the name of your game and the hashtags #screenshotsaturday and #gamedevduel and/or the Game Dev Co-op Facebook page (http://facebook.com/stlgamedev) with the hashtag #screenshotsaturday</td>
-          <td>
-            2
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Publisher</strong><br/>Build an itch.io page for your game under our Game Jam" ><img src="/assets/icons/book-cover.svg" class="ach-icon" alt="icons/book-cover.svg"></span>
-</td>
-          <td><strong>Publisher</strong></td>
-          <td>Build an itch.io page for your game under our Game Jam</td>
-          <td>
-            2
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Songster</strong><br/>Have at least one song in your game" ><img src="/assets/icons/guitar.svg" class="ach-icon" alt="icons/guitar.svg"></span>
-</td>
-          <td><strong>Songster</strong></td>
-          <td>Have at least one song in your game</td>
-          <td>
-            2
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Check-in #2</strong><br/>Meet up with your team in person to evaluate progress and discuss plans. If your whole team is over 21, meet up at the check-in on July 14th at Orbit Pinball Lounge." ><img src="/assets/icons/hill-conquest.svg" class="ach-icon" alt="icons/hill-conquest.svg"></span>
-</td>
-          <td><strong>Check-in #2</strong></td>
-          <td>Meet up with your team in person to evaluate progress and discuss plans. If your whole team is over 21, meet up at the check-in on July 14th at Orbit Pinball Lounge.</td>
-          <td>
-            2
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Death</strong><br/>Your game has a loss state (free achievement if this is not applicable)" ><img src="/assets/icons/tombstone.svg" class="ach-icon" alt="icons/tombstone.svg"></span>
-</td>
-          <td><strong>Death</strong></td>
-          <td>Your game has a loss state (free achievement if this is not applicable)</td>
-          <td>
-            2
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Winner</strong><br/>Your game has a level or sub-section complete state working (free achievement if this is not applicable)" ><img src="/assets/icons/checkered-flag.svg" class="ach-icon" alt="icons/checkered-flag.svg"></span>
-</td>
-          <td><strong>Winner</strong></td>
-          <td>Your game has a level or sub-section complete state working (free achievement if this is not applicable)</td>
-          <td>
-            2
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Hardcore #2</strong><br/>Everyone on the team worked on the game for over 3 hours in one sitting between July 8th and July 15th" ><img src="/assets/icons/confrontation.svg" class="ach-icon" alt="icons/confrontation.svg"></span>
-</td>
-          <td><strong>Hardcore #2</strong></td>
-          <td>Everyone on the team worked on the game for over 3 hours in one sitting between July 8th and July 15th</td>
-          <td>
-            2
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Weekender #2</strong><br/>At least one person on the team spent at least 8 hours over the weekend of July 8th to July 10th working on the game" ><img src="/assets/icons/sands-of-time.svg" class="ach-icon" alt="icons/sands-of-time.svg"></span>
-</td>
-          <td><strong>Weekender #2</strong></td>
-          <td>At least one person on the team spent at least 8 hours over the weekend of July 8th to July 10th working on the game</td>
-          <td>
-            2
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Menus</strong><br/>Add a title screen to your game (free achievement if this is not applicable)" ><img src="/assets/icons/read.svg" class="ach-icon" alt="icons/read.svg"></span>
-</td>
-          <td><strong>Menus</strong></td>
-          <td>Add a title screen to your game (free achievement if this is not applicable)</td>
-          <td>
-            3
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Screenshot Saturday #2</strong><br/>July 16 Post a screenshot to Twitter with the name of your game and the hashtags #screenshotsaturday and #gamedevduel and/or the Game Dev Co-op Facebook page (http://facebook.com/stlgamedev) with the hashtag #screenshotsaturday" ><img src="/assets/icons/photo-camera.svg" class="ach-icon" alt="icons/photo-camera.svg"></span>
-</td>
-          <td><strong>Screenshot Saturday #2</strong></td>
-          <td>July 16 Post a screenshot to Twitter with the name of your game and the hashtags #screenshotsaturday and #gamedevduel and/or the Game Dev Co-op Facebook page (http://facebook.com/stlgamedev) with the hashtag #screenshotsaturday</td>
-          <td>
-            3
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Face Off</strong><br/>Add at least one sound effect to the game that was recorded by a team member and uses either the environment or a face" ><img src="/assets/icons/sing.svg" class="ach-icon" alt="icons/sing.svg"></span>
-</td>
-          <td><strong>Face Off</strong></td>
-          <td>Add at least one sound effect to the game that was recorded by a team member and uses either the environment or a face</td>
-          <td>
-            3
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Feedback</strong><br/>Have someone play your game" ><img src="/assets/icons/tabletop-players.svg" class="ach-icon" alt="icons/tabletop-players.svg"></span>
-</td>
-          <td><strong>Feedback</strong></td>
-          <td>Have someone play your game</td>
-          <td>
-            3
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Check-in #3</strong><br/>Meet up with your team in person. We recommend the check-in event at Riot Games on July 20th" ><img src="/assets/icons/hill-conquest.svg" class="ach-icon" alt="icons/hill-conquest.svg"></span>
-</td>
-          <td><strong>Check-in #3</strong></td>
-          <td>Meet up with your team in person. We recommend the check-in event at Riot Games on July 20th</td>
-          <td>
-            3
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>The Chopping Block</strong><br/>Talk to the team and cut at least two planned features and/or assets from your game" ><img src="/assets/icons/axe-in-stump.svg" class="ach-icon" alt="icons/axe-in-stump.svg"></span>
-</td>
-          <td><strong>The Chopping Block</strong></td>
-          <td>Talk to the team and cut at least two planned features and/or assets from your game</td>
-          <td>
-            3
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Control for All</strong><br/>Your game supports both mouse and keyboard and controller input methods" ><img src="/assets/icons/gamepad.svg" class="ach-icon" alt="icons/gamepad.svg"></span>
-</td>
-          <td><strong>Control for All</strong></td>
-          <td>Your game supports both mouse and keyboard and controller input methods</td>
-          <td>
-            3
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Credits</strong><br/>Add a credits screen to your game" ><img src="/assets/icons/folded-paper.svg" class="ach-icon" alt="icons/folded-paper.svg"></span>
-</td>
-          <td><strong>Credits</strong></td>
-          <td>Add a credits screen to your game</td>
-          <td>
-            3
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Hardcore #3</strong><br/>Everyone on the team worked on the game for over 3 hours in one sitting between July 15th and July 22nd" ><img src="/assets/icons/confrontation.svg" class="ach-icon" alt="icons/confrontation.svg"></span>
-</td>
-          <td><strong>Hardcore #3</strong></td>
-          <td>Everyone on the team worked on the game for over 3 hours in one sitting between July 15th and July 22nd</td>
-          <td>
-            3
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Weekender #3</strong><br/>At least one person on the team spent at least 8 hours over the weekend of July 15th to July 17th working on the game" ><img src="/assets/icons/sands-of-time.svg" class="ach-icon" alt="icons/sands-of-time.svg"></span>
-</td>
-          <td><strong>Weekender #3</strong></td>
-          <td>At least one person on the team spent at least 8 hours over the weekend of July 15th to July 17th working on the game</td>
-          <td>
-            3
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Check-in #4</strong><br/>Meet up with your team in person. We recommend the check-in event the last week of July" ><img src="/assets/icons/hill-conquest.svg" class="ach-icon" alt="icons/hill-conquest.svg"></span>
-</td>
-          <td><strong>Check-in #4</strong></td>
-          <td>Meet up with your team in person. We recommend the check-in event the last week of July</td>
-          <td>
-            4
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Screenshot Saturday #3</strong><br/>July 23rd Post a screenshot to Twitter with the name of your game and the hashtags #screenshotsaturday and #gamedevduel and/or the Game Dev Co-op Facebook page (http://facebook.com/stlgamedev) with the hashtag #screenshotsaturday" ><img src="/assets/icons/photo-camera.svg" class="ach-icon" alt="icons/photo-camera.svg"></span>
-</td>
-          <td><strong>Screenshot Saturday #3</strong></td>
-          <td>July 23rd Post a screenshot to Twitter with the name of your game and the hashtags #screenshotsaturday and #gamedevduel and/or the Game Dev Co-op Facebook page (http://facebook.com/stlgamedev) with the hashtag #screenshotsaturday</td>
-          <td>
-            4
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Screenshot Saturday #4</strong><br/>July 30th Post a screenshot to Twitter with the name of your game and the hashtags #screenshotsaturday and #gamedevduel and/or the Game Dev Co-op Facebook page (http://facebook.com/stlgamedev) with the hashtag #screenshotsaturday" ><img src="/assets/icons/photo-camera.svg" class="ach-icon" alt="icons/photo-camera.svg"></span>
-</td>
-          <td><strong>Screenshot Saturday #4</strong></td>
-          <td>July 30th Post a screenshot to Twitter with the name of your game and the hashtags #screenshotsaturday and #gamedevduel and/or the Game Dev Co-op Facebook page (http://facebook.com/stlgamedev) with the hashtag #screenshotsaturday</td>
-          <td>
-            4
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Finish Line</strong><br/>Finish your game!" ><img src="/assets/icons/graduate-cap.svg" class="ach-icon" alt="icons/graduate-cap.svg"></span>
-</td>
-          <td><strong>Finish Line</strong></td>
-          <td>Finish your game!</td>
-          <td>
-            4
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Promo Video</strong><br/>Your game has a gameplay video on Youtube and/or your itch.io game page" ><img src="/assets/icons/look-at.svg" class="ach-icon" alt="icons/look-at.svg"></span>
-</td>
-          <td><strong>Promo Video</strong></td>
-          <td>Your game has a gameplay video on Youtube and/or your itch.io game page</td>
-          <td>
-            4
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>In-Store</strong><br/>Your game has a retail-style box complete with screenshots and a witty game description" ><img src="/assets/icons/cardboard-box.svg" class="ach-icon" alt="icons/cardboard-box.svg"></span>
-</td>
-          <td><strong>In-Store</strong></td>
-          <td>Your game has a retail-style box complete with screenshots and a witty game description</td>
-          <td>
-            4
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Made in St Louis</strong><br/>Add the Made in St. Louis Splash Screen to your game" ><img src="/assets/icons/wax-seal.svg" class="ach-icon" alt="icons/wax-seal.svg"></span>
-</td>
-          <td><strong>Made in St Louis</strong></td>
-          <td>Add the Made in St. Louis Splash Screen to your game</td>
-          <td>
-            4
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Hardcore #4</strong><br/>Everyone on the team worked on the game for over 3 hours in one sitting between July 22nd and July 29th" ><img src="/assets/icons/confrontation.svg" class="ach-icon" alt="icons/confrontation.svg"></span>
-</td>
-          <td><strong>Hardcore #4</strong></td>
-          <td>Everyone on the team worked on the game for over 3 hours in one sitting between July 22nd and July 29th</td>
-          <td>
-            4
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Weekender #4</strong><br/>At least one person on the team spent at least 8 hours over the weekend of July 22nd to July 25th working on the game" ><img src="/assets/icons/sands-of-time.svg" class="ach-icon" alt="icons/sands-of-time.svg"></span>
-</td>
-          <td><strong>Weekender #4</strong></td>
-          <td>At least one person on the team spent at least 8 hours over the weekend of July 22nd to July 25th working on the game</td>
-          <td>
-            4
-            
-          </td>
-        </tr>
         
-        <tr>
-          <td class="text-center">
-
-<span style="display:inline-block;" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>Weekender #5</strong><br/>At least one person on the team spent at least 8 hours over the weekend of July 29th to July 31st working on the game" ><img src="/assets/icons/sands-of-time.svg" class="ach-icon" alt="icons/sands-of-time.svg"></span>
-</td>
-          <td><strong>Weekender #5</strong></td>
-          <td>At least one person on the team spent at least 8 hours over the weekend of July 29th to July 31st working on the game</td>
-          <td>
-            4
-            
-          </td>
-        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         <tr>
           <td class="text-center">
@@ -607,11 +300,13 @@
 </td>
           <td><strong>Diverse</strong></td>
           <td>If your game has characters in it, make sure at least one of them is not a straight white person (free if your game has no characters)</td>
-          <td>
-            --
+          <td class="text-center">
+            <i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -620,11 +315,13 @@
 </td>
           <td><strong>Open Source</strong></td>
           <td>Your game is open source and the code is available in a public source control repository such as github.com or bitbucket.com</td>
-          <td>
-            --
+          <td class="text-center">
+            <i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -633,11 +330,13 @@
 </td>
           <td><strong>The Internet</strong></td>
           <td>Your game contains a picture, gif, or video of a cat</td>
-          <td>
-            --
+          <td class="text-center">
+            <i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -646,11 +345,13 @@
 </td>
           <td><strong>Committed</strong></td>
           <td>Someone on your team has made at least one commit to source control on every day in July</td>
-          <td>
-            --
+          <td class="text-center">
+            <i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -659,11 +360,13 @@
 </td>
           <td><strong>Multiple Interpretations</strong></td>
           <td>Your game unquestionably demonstrates more than one interperitation of the Game Jam theme</td>
-          <td>
-            --
+          <td class="text-center">
+            <i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -672,11 +375,13 @@
 </td>
           <td><strong>Accessible</strong></td>
           <td>Your game can be played effectively by someone who is either blind or has no limbs</td>
-          <td>
-            --
+          <td class="text-center">
+            <i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -685,11 +390,13 @@
 </td>
           <td><strong>Character Development</strong></td>
           <td>A main character in your game changes over the course of the game (free if your game has no characters)</td>
-          <td>
-            --
+          <td class="text-center">
+            <i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -698,11 +405,13 @@
 </td>
           <td><strong>Shared Assets</strong></td>
           <td>Your game features an asset or character from some other gamedevduel team. (coordinate through Slack)</td>
-          <td>
-            --
+          <td class="text-center">
+            <i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -711,11 +420,13 @@
 </td>
           <td><strong>Orchestrated</strong></td>
           <td>Your game features at least three songs that were written specifically for your game</td>
-          <td>
-            --
+          <td class="text-center">
+            <i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
             
           </td>
         </tr>
+        
+        
         
         <tr>
           <td class="text-center">
@@ -724,16 +435,26 @@
 </td>
           <td><strong>Archie</strong></td>
           <td>Put a reference to or asset of the St. Louis arch somewhere in your game</td>
-          <td>
-            --
+          <td class="text-center">
+            <i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
             
           </td>
         </tr>
+        
         
       </tbody>
     </table>
   </div>
 </div>
+<script>
+  function weekSort(a, b) {
+    if (a > 4 && b <= 4) return 1;
+    if (a <= 4 && b > 4) return -1;
+    if (a > b) return -1;
+    if (a < b) return 1;
+    return 0;
+  }
+</script>
 
 
     </div>
@@ -743,7 +464,11 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-8 col-md-offset-2 text-center">
+      <div class="col-md-2">
+        <img src="/assets/made-in-st-louis.svg" height="60px" alt="made-in-st-louis.svg">
+      </div>
+
+      <div class="col-md-8  text-center">
         <p class="text-info"><i class="fa fa-copyright"></i><strong>2016 Saint Louis Game Dev Duel</strong></p>
       </div>
 
